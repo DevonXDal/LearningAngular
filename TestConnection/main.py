@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route('/test/user-settings', methods=['POST'])
-def hello():
+def test_user_settings_form():
     #abort(500, {"message": "Failed to get off the couch"})
     content_type = request.headers.get('Content-Type')
     if content_type == 'application/json':
