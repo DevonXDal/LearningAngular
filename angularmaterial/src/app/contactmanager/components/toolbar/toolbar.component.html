@@ -8,4 +8,15 @@
     </button>
 
     <span>Contact Manager</span>
+
+    <span class="example-spacer"></span>
+
+    <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon aria-hidden="false" aria-label="More actions">more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="openAddContactDialog()">New Contact</button>
+    </mat-menu>
+
+    
 </mat-toolbar>
