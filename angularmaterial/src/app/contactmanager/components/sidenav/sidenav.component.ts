@@ -17,6 +17,9 @@ export class SidenavComponent implements OnInit {
   public isScreenSmall = false;
 
   users?: Observable<User[]>;
+  isDarkTheme: boolean = false;
+  shouldUseRightToLeft: boolean = false;
+
   @ViewChild(MatSidenav) sidenav: MatSidenav | undefined;
 
   constructor(
@@ -44,4 +47,11 @@ export class SidenavComponent implements OnInit {
     })
   }
 
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
+
+  toggleDirection() {
+    this.shouldUseRightToLeft = !this.shouldUseRightToLeft;
+  }
 }
