@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin-callback',
-  template: `<div></div>`
+  template: `<div>Finishing login process...</div>`
 })
 
 export class SigninRedirectCallbackComponent implements OnInit {
